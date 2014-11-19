@@ -101,25 +101,6 @@ if diffnames == 0
        
        save('SANTA_OUT.mat','santa');
 
-% 
-%        
-% % Modify these two lines to reflect
-% % your account and password.
-% myaddress = 'mark.patton@nottingham.ac.uk';
-% mypassword = 'xxxx';
-% 
-% setpref('Internet','E_mail',myaddress);
-% setpref('Internet','SMTP_Server','smtp.nottingham.ac.uk');
-% setpref('Internet','SMTP_Username','ad/ppzmjp1');
-% setpref('Internet','SMTP_Password',mypassword);
-% 
-% props = java.lang.System.getProperties;
-% props.setProperty('mail.smtp.auth','true');
-% props.setProperty('mail.smtp.socketFactory.class', ...
-%                   'javax.net.ssl.SSLSocketFactory');
-% props.setProperty('mail.smtp.socketFactory.port','587');
-% 
-
 setpref('Internet','E_mail',myaddress);
 setpref('Internet','SMTP_Server','smtp.gmail.com');
 setpref('Internet','SMTP_Username',myaddress);
