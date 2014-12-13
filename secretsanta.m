@@ -62,32 +62,32 @@ santa.emails1               =       santa.emails(santa.order1);
 
 diffnames       =       0;
 
-ranstring       =       'RANDOMIZING NAMES';
-
-for n = 1:10
-    clc
-    disp(ranstring)
-    ranstring       =       strcat(ranstring,'.');
-    pause(0.1)
-end
-
-ranstring       =       'COMPILING REINDEER';
-
-for n = 1:10
-    clc
-    disp(ranstring)
-    ranstring       =       strcat(ranstring,'.');
-    pause(0.1)
-end
-
-ranstring       =       'DEFRAGMENTING ELVES';
-
-for n = 1:10
-    clc
-    disp(ranstring)
-    ranstring       =       strcat(ranstring,'.');
-    pause(0.1)
-end
+% ranstring       =       'RANDOMIZING NAMES';
+% 
+% for n = 1:10
+% %     clc
+%     disp(ranstring)
+%     ranstring       =       strcat(ranstring,'.');
+%     pause(0.1)
+% end
+% 
+% ranstring       =       'COMPILING REINDEER';
+% 
+% for n = 1:10
+% %     clc
+%     disp(ranstring)
+%     ranstring       =       strcat(ranstring,'.');
+%     pause(0.1)
+% end
+% 
+% ranstring       =       'DEFRAGMENTING ELVES';
+% 
+% for n = 1:10
+% %     clc
+%     disp(ranstring)
+%     ranstring       =       strcat(ranstring,'.');
+%     pause(0.1)
+% end
 
 %%
 
@@ -95,6 +95,8 @@ for n = 1:length(santa.names)
     diffnames   =   diffnames + strcmp(santa.names1{n},santa.names2{n});
     
 end
+
+% disp(diffnames)
 
 if diffnames == 0
        disp('SUCCESSFUL RANDOMIZED NAME MATRIX GENERTATION')
@@ -116,7 +118,7 @@ for n = 1:length(santa.names)
      disp(['Sending e-mail to: ',santa.names1{n}])
 
 line1       =       ['Dear ', char(santa.names1{:,n}), ','];
-line2       =       ['Ho ho ho!  You''re buying a gift for ', char(santa.names2{:,n}),'.' ];
+line2       =       ['Ho ho ho!  You''re buying a £7 gift for ', char(santa.names2{:,n}),'.' ];
 line3       =       'Lots of love,';
 line4       =       'Santa x';
 % line5       =       'Sent from MATLAB.  They said Mark couldn''t do it, but boy did he prove them wrong!';
@@ -135,7 +137,7 @@ disp(' ')
 disp('MEMORY CLEARED')
 
 else
-       disp('FESTIVE KERNEL INITIALISATION FAILURE.  REINSERT ELVES AND RERUN...')
+%        disp('FESTIVE KERNEL INITIALISATION FAILURE.  REINSERT ELVES AND RERUN...')
 end
 end
 end
