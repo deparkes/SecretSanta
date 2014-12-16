@@ -2,7 +2,7 @@ SecretSanta
 ===========
 Do you enjoy Secret Santa, but are concerned about people finding out which present you bought? 
 
-Then add some security to your festive fun with the Double Blind Secret Santa Code for Matlab!
+Then add some security to your festive fun with the Double Blind Secret Santa Code for Matlab and Python!
 
 
 Requirements
@@ -13,7 +13,7 @@ Requirements
 
 How to use
 ----------
-Set up a suitable novelty gmail account, such as santa_loves_christmas@gmail.com
+Use your own or set up a suitable novelty gmail account, such as santa_loves_christmas@gmail.com
 
 Make a text file called "email_login.txt" which contains your novelty account username and password, like this:
 
@@ -35,4 +35,5 @@ There are sometimes problems with connecting to the email account through proxy 
 * Actually, yes they can - the sent items log will show the messages sent out to your santas.
 
 # About
-Original Code by Mark Patton. Modifications and publication by Duncan Parkes.
+Original Matlab Code by Mark Patton. Python Code by Stuart Bowe.
+Modifications and publication by Duncan Parkes.
